@@ -14,11 +14,3 @@ class Node(object):
 
     def setNext(self, newPointer):
         self.pointer = newPointer
-
-d = Node('d')
-c = Node('c', d)
-b = Node('b', c)
-a = Node('a', b) # 선형 노드, a가 최상위 노드인 식
-
-print(a.getData())
-print(a.getNext().getData()) # 포인터의 값 출력
