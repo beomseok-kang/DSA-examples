@@ -9,9 +9,8 @@ class Queue(object):
         self.items.insert(0, item)
 
     def dequeue(self):
-        value = self.items.pop()
-        if value is not None:
-            return value
+        if self.items:
+            return self.items.pop()
         else:
             print("Queue is empty.")
 
