@@ -22,8 +22,6 @@ def find_k_largest(seq, k):
         result.extend(after)
         result.extend(find_k_largest(before, k - length_after))
     return result
-
-print(find_k_largest([7,7,7,7,8,9,2,2,4,5,6,2,0,3,3,7], 4))
     
 #######################
 
@@ -67,4 +65,5 @@ def find_k_largest_answer_book(seq, k):
             result.append(item)
     return result
 
+print(find_k_largest([7,7,7,7,8,9,2,2,4,5,6,2,0,3,3,7], 4))
 print(find_k_largest_answer_book([7,7,7,7,8,9,2,2,4,5,6,2,0,3,3,7], 4))
